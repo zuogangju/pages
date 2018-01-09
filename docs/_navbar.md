@@ -1,6 +1,5 @@
 - 接口列表
-  - [任务相关.md](/任务相关.md)
-  - [资源管理接口v1.md](/资源管理接口v1.md)
-  - [测试问题.md](/测试问题.md)
+  - [task.md](/task.md)
+  - [sourcesv1.md](/sourcesv1.md)
   - [test.md](/test.md)
   - [README.md](/)
