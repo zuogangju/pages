@@ -55,8 +55,8 @@ docsify自动监听3000端口，浏览器输入 http://localhost:3000
 ### 发布到 GitHub Page
 将文档托管到github，这样就可以随时随地访问了。
 
-新建一个仓库，在setting里面开启 GitHub Pages 功能，
-选择：GitHub Pages->master branch /docs folder
+新建一个仓库，在setting里面开启 GitHub Pages 功能，如图：
+![setting](https://raw.githubusercontent.com/zuogangju369/pages/master/docs/docsify.jpg)
 浏览器输入 https://zuogangju369.github.io/pages/  就可以看到你的文档了
 
 更多设置 https://docsify.js.org/#/zh-cn/
