@@ -8,14 +8,15 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-<style>
-.app-nav {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-}
-</style>
+  <style>
+    .app-nav {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+    }
+  </style>
 </head>
+
 <body>
   <!-- <nav>
     <a href="#/">EN</a>
@@ -29,11 +30,35 @@
       auto2top: true,
       name: "docsify",
       repo: 'https://zuogangju369.github.io/pages/',
-      subMaxLevel: 6
+
+      subMaxLevel: 6,
+      // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or []
+        // placeholder: 'Type to search',
+
+        // 支持本地化
+        placeholder: {
+          '/': '请输入搜索内容'
+        },
+
+        // noData: 'No Results!',
+
+        // 支持本地化
+        noData: {
+          '/': '未找到结果'
+        },
+
+        // 搜索标题的最大程级, 1 - 6
+        depth: 6
+      }
+
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-json.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
 </body>
 
 </html>
