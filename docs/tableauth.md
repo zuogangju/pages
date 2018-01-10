@@ -1,6 +1,6 @@
 # 表权限管理相关
 
-### 获取公有表字段权限
+## 获取公有表字段权限
 
 **GET  /sourcetable/auth/public/field**
 
@@ -30,7 +30,7 @@ arr
 
 
 
-### 获取私有表权限
+## 获取私有表权限
 
 **GET  /sourcetable/auth/private/field**
 
@@ -59,7 +59,7 @@ arr
 
 
 
-### 更新用户的私有表权限
+## 更新用户的私有表权限
 
 **POST /sourcetable/users/auth/private/update**
 
@@ -78,7 +78,7 @@ arr
 
 **返回结果: Status**
 
-### 更新用户的公有表权限
+## 更新用户的公有表权限
 
 **POST /sourcetable/users/auth/public/update**
 
