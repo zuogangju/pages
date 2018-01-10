@@ -59,7 +59,12 @@
           '/': '未找到结果'
         },
         // 搜索标题的最大程级, 1 - 6
-        depth: 6
+        depth: 6,
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        formatUpdated: function (time) {
+          // ...
+          return time
+        }
       }
     }
   </script>
