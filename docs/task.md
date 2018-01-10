@@ -51,7 +51,7 @@
 ```json
 {
     "succ": true,
-    "msg": "删除成功",
+    "msg": "",
     "code": 0,
     "data": {
      "userId":"yjy1",
