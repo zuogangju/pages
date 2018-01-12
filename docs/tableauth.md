@@ -2,9 +2,11 @@
 
 ## 获取公有表字段权限
 
-**GET  /sourcetable/auth/public/field**
+> **GET  /sourcetable/auth/public/field**
 
-**params**
+---
+
+> **params**
 
 ```javascript
 {
@@ -16,7 +18,7 @@
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```javascript
 arr
@@ -28,13 +30,13 @@ arr
 }
 ```
 
-
-
 ## 获取私有表权限
 
-**GET  /sourcetable/auth/private/field**
+> **GET  /sourcetable/auth/private/field**
 
-**params**
+---
+
+> **params**
 
 ```javascript
 {
@@ -46,7 +48,7 @@ arr
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```javascript
 arr
@@ -57,13 +59,13 @@ arr
 }
 ```
 
-
-
 ## 更新用户的私有表权限
 
-**POST /sourcetable/users/auth/private/update**
+> **POST /sourcetable/users/auth/private/update**
 
-**params**
+---
+
+> **params**
 
 ```javascript
 {
@@ -76,13 +78,15 @@ arr
 }
 ```
 
-**返回结果: Status**
+> **返回结果: Status**
 
 ## 更新用户的公有表权限
 
-**POST /sourcetable/users/auth/public/update**
+> **POST /sourcetable/users/auth/public/update**
 
-**params**
+---
+
+> **params**
 
 ```javascript
 {
@@ -95,4 +99,4 @@ arr
 }
 ```
 
-**返回结果: Status**
+> **返回结果: Status**

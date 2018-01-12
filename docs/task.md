@@ -1,18 +1,27 @@
+# 任务接口
+
 ## 任务相关
 
 ### 创建job
-**POST  /{projectId}/sch/job/new**
-**请求参数**
+
+> **POST  /{projectId}/sch/job/new**
+
+--
+
+> **请求参数**
+
 ```json
 {
     "name": "job名称",
-    "exeEngine": "SHELL", 
-    "execFileAddr": "a/b/c", 
+    "exeEngine": "SHELL",
+    "execFileAddr": "a/b/c",
     "desc": "ddd",
     "jobParam": "job参数"
 }
 ```
-**返回结果**
+
+> **返回结果**
+
 ```json
 {
     "succ": true,
@@ -23,15 +32,22 @@
 ```
 
 ### 删除job
-**GET  /{projectId}/sch/job/delete/{jobId}**
-**请求参数**
+
+> **GET  /{projectId}/sch/job/delete/{jobId}**
+
+---
+
+> **请求参数**
+
 ```json
 {
     "projectId":"int",
     "jobId":"int"
 }
 ```
-**返回结果**
+
+> **返回结果**
+
 ```json
 {
     "succ": true,
@@ -40,16 +56,24 @@
     "data": true
 }
 ```
+
 ### 查询job详情
-**GET  /{projectId}/sch/job/detail/{jobId}**
-**请求参数**
+
+> **GET  /{projectId}/sch/job/detail/{jobId}**
+
+---
+
+> **请求参数**
+
 ```json
 {
     "projectId":"int",
     "jobId":"int"
 }
 ```
-**返回结果**
+
+> **返回结果**
+
 ```json
 {
     "succ": true,
@@ -65,15 +89,18 @@
      "exeEngine":"HIVE",
      "execFileAddr":"/select.sh",
      "desc":"job描述"
-    
     }
 }
 ```
+
 ### 根据用户信息查询所有任务流实例
 
-**GET  /sch/wf/wfRun/list**
+> **GET  /sch/wf/wfRun/list**
 
-**请求参数**
+---
+
+> **请求参数**
+
 ```json
 {
     "pageNo": 1,
@@ -86,8 +113,7 @@
 
 ```
 
-
-**返回结果**
+> **返回结果**
 
 ```json
 {
