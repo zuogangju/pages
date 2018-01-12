@@ -52,7 +52,7 @@
 
 > docsify serve docs
 
-docsify自动监听3000端口，浏览器输入 [http://localhost:3000](http://localhost:3000)
+docsify自动监听3000端口，浏览器输入 <http://localhost:3000>
 
 就可以看到你在README.md里面编辑的内容了
 
@@ -62,6 +62,6 @@ docsify自动监听3000端口，浏览器输入 [http://localhost:3000](http://l
 
 新建一个仓库，在setting里面开启 GitHub Pages 功能，如图：
 ![setting](https://raw.githubusercontent.com/zuogangju369/pages/master/docs/docsify.jpg)
-浏览器输入 [https://zuogangju369.github.io/pages/](https://zuogangju369.github.io/pages/)  就可以看到你的文档了
+浏览器输入 <https://zuogangju369.github.io/pages/>  就可以看到你的文档了
 
 [更多设置](https://docsify.js.org/#/zh-cn/)
