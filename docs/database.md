@@ -17,13 +17,11 @@
 }
 ```
 
-
-
 ## 1. 获取库
 
 ***GET请求:*** **/database/list**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -32,9 +30,9 @@
 }
 ```
 
-**返回参数**
+> **返回参数**
 
-```JSON
+```json
 PagiGation // 页码对象
 data: [
     {
@@ -51,11 +49,12 @@ data: [
     }
 ]
 ```
+
 ## 2.创建数据库
 
-***POST请求:*** **/database/create** 
+***POST请求:*** **/database/create**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -66,12 +65,11 @@ data: [
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```json
 {
-	"succ": true | false, // true 创建成功 false 失败
-  	...
+    "succ": true | false // true 创建成功 false 失败
 }
 ```
 
@@ -79,7 +77,7 @@ data: [
 
 ***POST请求*** **/database/delete**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -89,7 +87,7 @@ data: [
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```json
 Status // 状态对象
@@ -104,7 +102,7 @@ Status // 状态对象
 
 (同表管理的接口一直)
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -115,12 +113,12 @@ Status // 状态对象
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```json
 PagiGation // 分页对象
 data: [
-	{
+    {
       "createTime": 1505201617000,
       "tableTypeCd": "1111",
       "tableDesc": "tabledesc",
@@ -132,15 +130,15 @@ data: [
       "ddl": "ddl",
       "createInstId": "0800010000",
       "createUserId": "111"
-	}
+    }
 ]
 ```
 
 ## 5. 查看建表语句
 
-同表管理 
+同表管理
 
-**(TableId 替换成  dbName + TableName 两个字段)**
+> **(TableId 替换成  dbName + TableName 两个字段)**
 
 ## 6. 查看表字段
 
@@ -150,7 +148,7 @@ data: [
 
 ***GET请求*** **/sourcetable/auth/view/{authlevel}**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -161,7 +159,7 @@ data: [
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```json
 PagiGation // 分页对象
@@ -169,7 +167,7 @@ data: [
     {
         UserInfo({
             "auth": 0 | 1 | 2; // 0 读  1 写 2 ALL
-        }),      
+        }),
     }
 ]
 ```
@@ -178,27 +176,27 @@ data: [
 
 ***GET请求*** **/sourcetable/auth/field**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
-        "dbName": string,
+        "dbName"   : string,
         "tableName": string,
-  	"userId": string,
-        "instId": string,
-  	"uid": string
+   "userId"        : string,
+        "instId"   : string,
+"uid"              : string
 }
 ```
 
-**返回参数**
+> **返回参数**
 
 ```json
 State
-data: [
+"data": [
     {
-        fieldName: string, // 字段名称
-      	filedDesc: string, // 可没有
-      	active: true // 是否有该字段的权限
+        "fieldName": string, // 字段名称
+        "filedDesc": string, // 可没有
+        "active": true // 是否有该字段的权限
     }
 ]
 ```
@@ -207,7 +205,7 @@ data: [
 
 ***POST请求*** **/sourcetable/users/auth/delete**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -223,7 +221,7 @@ data: [
 }
 ```
 
-**返回参数**
+> **返回参数**
 
 ```json
 Status
@@ -236,7 +234,7 @@ Status
 
 ***POST请求*** **/sourcetable/fields/auth/delete**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -246,13 +244,13 @@ Status
         {
            "fieldName": string;
         }, {
-           "fieldName": string; // 前端过滤    
+           "fieldName": string; // 前端过滤
         }
     ]
 }
 ```
 
-**返回参数**
+> **返回参数**
 
 ```json
 Status
@@ -261,15 +259,13 @@ Status
 }
 ```
 
-
-
 ### 7.4 添加用户权限
 
 #### 7.4.1 获取用户列表
 
 ***GET 请求*** **/sourcetable/users**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
@@ -281,9 +277,9 @@ Status
 }
 ```
 
-**返回参数**
+>**返回参数**
 
-```
+```json
 PagiGation
 data: [
   {
@@ -299,24 +295,24 @@ data: [
 
 ***POST请求*** **/sourcetable/add/users**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
     "dbName": string;
     "tableName": string;
     "users": [
-    	{
-    		"userId": string;
-     		"instId": string;
-  		"uid": string;
-  		"auth": 0 | 1 | 2; // 0 读  1 写 2 ALL
-		}
+        {
+            "userId": string;
+            "instId": string;
+            "uid": string;
+            "auth": 0 | 1 | 2; // 0 读  1 写 2 ALL
+        }
     ]
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```json
 Status
@@ -325,30 +321,28 @@ Status
 }
 ```
 
-
-
 ### 7.5 修改表的用户权限
 
 ***POST请求*** **/sourcetable/users/auth/update**
 
-**请求参数**
+> **请求参数**
 
 ```json
 {
     "dbName": string;
     "tableName": string;
     "users": [
-    	{
-    		"userId": string;
-     		"instId": string;
-  		"uid": string;
-  		"auth": 0 | 1 | 2; // 0 读  1 写 2 ALL
-		}
+        {
+            "userId": string;
+            "instId": string;
+            "uid": string;
+            "auth": 0 | 1 | 2; // 0 读  1 写 2 ALL
+        }
     ]
 }
 ```
 
-**返回结果**
+> **返回结果**
 
 ```json
 Status
@@ -361,7 +355,7 @@ Status
 
 ***GET请求*** **/sourcetable/totaltable**
 
-**返回参数**
+> **返回参数**
 
 ```json
 Status
@@ -371,12 +365,13 @@ Status
 }
 ```
 
-# job和task日志相关
+## job和task日志相关
+
 ### 8.根据用户获取项目下的可执行文件
 
 ***GET请求*** **{projectId}/project/job/**
 
-**返回参数**
+> **返回参数**
 
 ```json
 Status
@@ -387,11 +382,12 @@ Status
                ];
 }
 ```
+
 ### 9.运行任务
 
 ***GET请求*** **{projectId}/sch/job/{jobId}/run**
 
-**返回参数**
+> **返回参数**
 
 ```json
 Status
@@ -399,11 +395,12 @@ Status
     "succ": true/false;
 }
 ```
+
 ### 10.停止任务
 
 ***GET请求*** **{projectId}/sch/job/{taskId}/stop**
 
-**返回参数**
+> **返回参数**
 
 ```json
 Status
@@ -411,11 +408,12 @@ Status
     "succ": true/false;
 }
 ```
+
 ### 10.查看job的所有运行实例
 
 ***GET请求*** **{projectId}/sch/job/tasks/{jobId}?pageNo=1&pageSize=10**
 
-**返回参数**
+> **返回参数**
 
 ```json
 {
@@ -444,7 +442,7 @@ Status
 ***GET请求*** **{projectId}/sch/task/log/{type}/{taskId}/{currFileSize}**
 type  0:上翻、1:下翻
 
-**返回参数**
+> **返回参数**
 
 ```json
 {

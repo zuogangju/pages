@@ -1,6 +1,7 @@
 # 用docsify快速构建文档，并用GitHub Pages展示
 
 ## 什么是docsify
+
 无需构建，写完 markdown 直接发布成文档，写说明文档的极佳选择。
 
 ## 快速上手
@@ -8,18 +9,19 @@
 ### 安装
 
 > npm i docsify-cli -g
-
 > docsify init docs
 
 ### 创建项目
+
 新建一个空项目，接着创建一个 docs 目录并进入到 docs 目录下
 
 > mkdir my-project && cd my-project
-
 > mkdir docs && cd docs
 
 ### 创建入口文件
+
 根目录下创建index.html 文件
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -35,9 +37,9 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-		loadSidebar: true,//多页文档
-		loadNavbar: true,//定制导航栏 
-		subMaxLevel: 6// 显示目录最大等级
+      loadSidebar: true,//多页文档
+      loadNavbar: true,//定制导航栏
+      subMaxLevel: 6// 显示目录最大等级
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -50,15 +52,16 @@
 
 > docsify serve docs
 
-docsify自动监听3000端口，浏览器输入 http://localhost:3000
+docsify自动监听3000端口，浏览器输入 [http://localhost:3000](http://localhost:3000)
 
 就可以看到你在README.md里面编辑的内容了
 
 ### 发布到 GitHub Page
+
 将文档托管到github，这样就可以随时随地访问了。
 
 新建一个仓库，在setting里面开启 GitHub Pages 功能，如图：
 ![setting](https://raw.githubusercontent.com/zuogangju369/pages/master/docs/docsify.jpg)
-浏览器输入 https://zuogangju369.github.io/pages/  就可以看到你的文档了
+浏览器输入 [https://zuogangju369.github.io/pages/](https://zuogangju369.github.io/pages/)  就可以看到你的文档了
 
-更多设置 https://docsify.js.org/#/zh-cn/
+[更多设置](https://docsify.js.org/#/zh-cn/)
