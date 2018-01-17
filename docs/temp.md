@@ -36,6 +36,7 @@
 
 ### 群管理
 
+
 ```sql
 alter table tbl_bdp_fe_group_info add column group_desc varchar(64) not null DEFAULT '' COMMENT '群描述';
 ```
