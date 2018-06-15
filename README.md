@@ -1,4 +1,4 @@
-https://zuogangju369.github.io/Pages/
+https://zuogangju369.github.io/pages/
 
 ## 什么是docsify
 无需构建，写完 markdown 直接发布成文档，写说明文档的极佳选择。
@@ -58,4 +58,4 @@ docsify自动监听3000端口，浏览器输入 http://localhost:3000
 
 新建一个仓库，在setting里面开启 GitHub Pages 功能，
 选择：GitHub Pages->master branch /docs folder
-浏览器输入 https://zuogangju369.github.io/Pages/  就可以看到你的文档了
+浏览器输入 https://zuogangju369.github.io/pages/  就可以看到你的文档了
