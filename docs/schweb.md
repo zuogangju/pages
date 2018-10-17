@@ -65,11 +65,11 @@ grammar_cjkRuby: true
 	"data":[
 			{
 				"tableName":"db.tableName",
-				"fields":{"id": "string","name":"string","type" string"}
+				"fields":{"id": "string","name":"string","type":"string"}
 			},
 			{
 				"tableName":"db.tableName2",
-				"fields":{"id": "string","name":"string","type" string"}
+				"fields":{"id": "string","name":"string","type":"string"}
 			},
 	]
 }
