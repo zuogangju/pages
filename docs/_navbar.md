@@ -5,6 +5,6 @@
   - [表权限管理相关](/tableauth.md)
   - [任务相关](/task.md)
   - [资源管理相关](/sourcesv1.md)
-  - [测试相关](/test.md)
+  - [schweb接口文档](/schweb.md)
   - [临时文档](/temp.md)
   - [项目](/mizar.md)
