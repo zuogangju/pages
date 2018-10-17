@@ -300,7 +300,7 @@ grammar_cjkRuby: true
 
 ## 下载结果
 > **GET /m1/task/download?taskId=111**
----
+
 **返回结果**
 正常下载文件
 
@@ -345,7 +345,6 @@ grammar_cjkRuby: true
 
 ## 查看日志
 > **GET /m1/task/log?taskId=111**
----
 **返回结果**
 ```json
 {
