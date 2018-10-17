@@ -4,12 +4,9 @@ tags: schweb,接口
 grammar_cjkRuby: true
 ---
 
-!> 文件类型:del,csv
----
-!> 任务状态:WS:等待运行,SR:准备运行,RN:运行中,ES:运行完成,EF:运行失败,AC:等待执行引擎
----
-!> 任务周期:number:次,day:日,week:周,month:月
----
+!> 文件类型 del,csv <br>
+任务状态 WS:等待运行,SR:准备运行,RN:运行中,ES:运行完成,EF:运行失败,AC:等待执行引擎<br>
+任务周期 number:次,day:日,week:周,month:月<br>
 
 # 用户接口
 
