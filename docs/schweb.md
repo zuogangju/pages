@@ -12,7 +12,7 @@ grammar_cjkRuby: true
 
 ## 获取用户信息
 > **GET /m1/userinfo**
----
+
 **返回结果**
 ```json
 {
@@ -39,7 +39,6 @@ grammar_cjkRuby: true
 ```
 ## 根据注册中心获取容器列表
 > **GET /m1/regist/center/container?registId=111**
----
 **返回结果**
 ```json
 {
@@ -55,7 +54,6 @@ grammar_cjkRuby: true
 
 ## 元数据列表查询(支持模糊查询)
 > **GET /m1/metadata/list?tableName=db.tableName**
----
 **返回结果**
 ```json
 {
@@ -76,7 +74,6 @@ grammar_cjkRuby: true
 ```
 ## 获取数据源
 > **GET /m1/datasource/list?**
----
 **返回结果**
 ```json
 {
