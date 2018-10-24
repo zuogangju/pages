@@ -283,7 +283,7 @@
 
 
 ## 下载结果
-> **GET /m1/job/download?taskId=111**
+> **GET /m1/job/download?jobId=111**
 
 **返回结果**
 ```text
