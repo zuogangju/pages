@@ -293,7 +293,7 @@
 
 
 ## 配置调度
-> **POST /m1/job/update/{taskId}**
+> **POST /m1/job/update/{jobId}**
 **请求参数**
 ```json
 {
@@ -330,7 +330,7 @@
 ```
 
 ## 查看日志
-> **GET /m1/job/log?taskId=111**
+> **GET /m1/job/log?jobId=111**
 
 **返回结果**
 ```json
