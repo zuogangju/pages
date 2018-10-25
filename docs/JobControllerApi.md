@@ -17,7 +17,7 @@ registId|string|注册中心id|false
 
 **Request-example:**
 ```
-No Parameter
+smart-doc currently cannot provide examples of parameters for the RequestParam request mode.
 ```
 **Response-fields:**
 
@@ -36,11 +36,11 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"v5e32m",
+	"msg":"zxnfbn",
 	"data":[
 		{
-			"id":"q5r9ai",
-			"title":"rtpkoh"
+			"id":"0suybu",
+			"title":"x7cta2"
 		}
 	]
 }
@@ -65,7 +65,7 @@ pageSize|int| 页数|true
 
 **Request-example:**
 ```
-No Parameter
+smart-doc currently cannot provide examples of parameters for the RequestParam request mode.
 ```
 **Response-fields:**
 
@@ -86,16 +86,16 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"t8gy02",
+	"msg":"wpwx9z",
 	"data":[
 		{
-			"tableName":"笑愚.丁",
+			"tableName":"峻熙.赵",
 			"fields":{
 				"mapKey":{
 					
 				}
 			},
-			"filePath":"inj0zd"
+			"filePath":"jc8w0w"
 		}
 	]
 }
@@ -131,11 +131,11 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"134phf",
+	"msg":"2dgrpv",
 	"data":[
 		{
-			"id":"bix4kn",
-			"title":"ydvute"
+			"id":"uwh2m8",
+			"title":"rkbc96"
 		}
 	]
 }
@@ -158,7 +158,7 @@ jobId|string|任务id|true
 
 **Request-example:**
 ```
-No Parameter
+smart-doc currently cannot provide examples of parameters for the RequestParam request mode.
 ```
 **Response-fields:**
 
@@ -175,8 +175,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"78dbtl",
-	"data":"q2bhyv"
+	"msg":"1j3xa0",
+	"data":"f0cqdr"
 }
 ```
 
@@ -204,13 +204,13 @@ sqlName|string|sql名称|false
 **Request-example:**
 ```
 {
-	"name":"笑愚.丁",
-	"taskId":"81i6ug",
-	"centerId":"uaoiry",
-	"containerId":"uyxdmc",
-	"sql":"xopxvm",
-	"fileType":"vvtwgm",
-	"sqlName":"笑愚.丁"
+	"name":"峻熙.赵",
+	"taskId":"co2h1n",
+	"centerId":"zc03tq",
+	"containerId":"w65su8",
+	"sql":"mtzwiw",
+	"fileType":"h0yw8c",
+	"sqlName":"峻熙.赵"
 }
 ```
 **Response-fields:**
@@ -228,8 +228,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"djwtir",
-	"data":579
+	"msg":"eq3a2i",
+	"data":550
 }
 ```
 
@@ -247,53 +247,53 @@ Parameter | Type|Description|Required
 ---|---|---|---
 jobId|string|任务时间|true
 name|string|名称|false
-execType|int|执行类型 0:保存;1:启动;2:启用调度|false
+execType|int|执行类型 0:保存调度 1:启用调度 2:执行任务调度(立即执行)|false
 centerId|string|注册中心id|false
 containerId|string|容器id|false
-isOutFile|int|是否输出文件|false
-isSch|int|是否配置调度|false
+isOutFile|int|是否输出文件 (1:是 0:否)|false
+isSch|int|是否配置调度(1:是 0:否)|false
 sch|object|调度信息|false
-└─schType|string|调度类型|false
-└─schDate|string|调度日期|false
-└─schTime|string|调度时间|false
-└─isDataSource|int|是否配置数据源|false
-└─schCycleNum|string|周期时间|false
+└─schType|string|调度类型(number:次,day:日,week:周,month:月)|false
+└─schDate|string|调度日期(yyyy-MM-dd)|false
+└─schTime|string|调度时间(范围值 3-23)|false
+└─isDataSource|int|是否配置数据源(1:有;0:否,isDataSource=1需配置dataSource,反之不需要配置)|false
+└─schCycleNum|string|周期时间(例:周2-周日执行,范围 2-7)|false
 └─dataSource|array|数据源信息|false
 sqlInfo|array|sql信息|false
 └─sql|string|sql内容|false
-└─fileType|string|文件类型|false
+└─fileType|string|文件类型(如果isOutFile=0 则fileType可以传null)|false
 └─sqlName|string|sql名称|false
-fileName|string|输出文件名称|false
+fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|false
 
 
 **Request-example:**
 ```
 {
-	"jobId":"bn4wy8",
-	"name":"笑愚.丁",
-	"execType":418,
-	"centerId":"all3m2",
-	"containerId":"9ql3oj",
-	"isOutFile":740,
-	"isSch":92,
+	"jobId":"izfxdh",
+	"name":"峻熙.赵",
+	"execType":493,
+	"centerId":"g2166c",
+	"containerId":"44whtz",
+	"isOutFile":40,
+	"isSch":31,
 	"sch":{
-		"schType":"9bk5wm",
+		"schType":"4otw7l",
 		"schDate":"2018-10-25",
-		"schTime":"2018-10-25 14:27:55",
-		"isDataSource":191,
-		"schCycleNum":"sc34q9",
+		"schTime":"2018-10-25 15:00:35",
+		"isDataSource":139,
+		"schCycleNum":"94ksyd",
 		"dataSource":[
-			""w3ykdg""
+			""mjxdy7""
 		]
 	},
 	"sqlInfo":[
 		{
-			"sql":"xk66q1",
-			"fileType":"kpr8k6",
-			"sqlName":"笑愚.丁"
+			"sql":"u47qsv",
+			"fileType":"d42epx",
+			"sqlName":"峻熙.赵"
 		}
 	],
-	"fileName":"笑愚.丁"
+	"fileName":"峻熙.赵"
 }
 ```
 **Response-fields:**
@@ -323,21 +323,21 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"kbrc7j",
+	"msg":"i73uoc",
 	"data":[
 		{
-			"sceneId":"atx41t",
-			"jobId":510,
-			"jobDesc":"kziqkp",
-			"jobType":"jygd32",
-			"job":"irbozi",
-			"cond":"kfqkgj",
-			"parameter":"qn7q36",
-			"info":"xhc9ru",
-			"retry":142,
-			"timeout":427,
-			"taskId":"kvfnj0",
-			"status":"423vxl"
+			"sceneId":"xx2py5",
+			"jobId":543,
+			"jobDesc":"rwgg57",
+			"jobType":"rkqawz",
+			"job":"v5vbrm",
+			"cond":"5f5r0e",
+			"parameter":"e040xt",
+			"info":"wt4awp",
+			"retry":899,
+			"timeout":592,
+			"taskId":"yqt7p2",
+			"status":"8susw7"
 		}
 	]
 }
@@ -357,18 +357,18 @@ Parameter | Type|Description|Required
 ---|---|---|---
 centerId|string|注册中心id|false
 containerId|string|容器id|false
-startDate|string|任务开始时间|false
-endDate|string|任务结束时间|false
+startDate|string|任务开始时间(yyyy-MM-dd)|false
+endDate|string|任务结束时间(yyyy-MM-dd)|false
 status|string|状态|false
-cycle|string|周期|false
-name|string|名称|false
+cycle|string|周期(number/day/week/month)|false
+name|string|名称(模糊搜索)|false
 pageNo|int|页码|false
 pageSize|int|页数|false
 
 
 **Request-example:**
 ```
-No Parameter
+smart-doc currently cannot provide examples of parameters for the RequestParam request mode.
 ```
 **Response-fields:**
 
@@ -397,21 +397,21 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"id7fja",
+	"msg":"zykax9",
 	"data":{
-		"pageNo":955,
-		"pageSize":681,
-		"total":13,
+		"pageNo":299,
+		"pageSize":810,
+		"total":764,
 		"data":[
 			{
-				"jobId":"m04fit",
-				"jobName":"笑愚.丁",
-				"jobStatus":"a463fz",
-				"schCycleNum":"pnpkju",
-				"condition":"9yf6t2",
+				"jobId":"k8xjgd",
+				"jobName":"峻熙.赵",
+				"jobStatus":"qtd5f7",
+				"schCycleNum":"3fjwka",
+				"condition":"m3xnzr",
 				"jobStartDateTime":"2018-10-25",
 				"jobEndDateTime":"2018-10-25",
-				"schType":"0pv2rf"
+				"schType":"gpxysk"
 			}
 		]
 	}
@@ -435,7 +435,7 @@ taskId|int|taskId|true
 
 **Request-example:**
 ```
-No Parameter
+smart-doc currently cannot provide examples of parameters for the RequestParam request mode.
 ```
 **Response-fields:**
 
@@ -452,8 +452,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"kl00pd",
-	"data":309
+	"msg":"12h11g",
+	"data":930
 }
 ```
 
@@ -471,28 +471,28 @@ Parameter | Type|Description|Required
 ---|---|---|---
 jobId|string|任务时间|true
 name|string|名称|false
-execType|int|执行类型 0:保存;1:启动;2:启用调度|false
+execType|int|执行类型 0:保存调度 1:启用调度 2:执行任务调度(立即执行)|false
 centerId|string|注册中心id|false
 containerId|string|容器id|false
-isOutFile|int|是否输出文件|false
-isSch|int|是否配置调度|false
+isOutFile|int|是否输出文件 (1:是 0:否)|false
+isSch|int|是否配置调度(1:是 0:否)|false
 sch|object|调度信息|false
-└─schType|string|调度类型|false
-└─schDate|string|调度日期|false
-└─schTime|string|调度时间|false
-└─isDataSource|int|是否配置数据源|false
-└─schCycleNum|string|周期时间|false
+└─schType|string|调度类型(number:次,day:日,week:周,month:月)|false
+└─schDate|string|调度日期(yyyy-MM-dd)|false
+└─schTime|string|调度时间(范围值 3-23)|false
+└─isDataSource|int|是否配置数据源(1:有;0:否,isDataSource=1需配置dataSource,反之不需要配置)|false
+└─schCycleNum|string|周期时间(例:周2-周日执行,范围 2-7)|false
 └─dataSource|array|数据源信息|false
 sqlInfo|array|sql信息|false
 └─sql|string|sql内容|false
-└─fileType|string|文件类型|false
+└─fileType|string|文件类型(如果isOutFile=0 则fileType可以传null)|false
 └─sqlName|string|sql名称|false
-fileName|string|输出文件名称|false
+fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|false
 
 
 **Request-example:**
 ```
-No Parameter
+smart-doc currently cannot provide examples of parameters for the RequestParam request mode.
 ```
 **Response-fields:**
 
@@ -521,21 +521,21 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"zx32d6",
+	"msg":"8b5fk9",
 	"data":[
 		{
-			"sceneId":"nf9jo6",
-			"jobId":926,
-			"jobDesc":"hglm1b",
-			"jobType":"ahk17e",
-			"job":"slixwn",
-			"cond":"jpgeyf",
-			"parameter":"jx59kh",
-			"info":"vjc5dk",
-			"retry":196,
-			"timeout":727,
-			"taskId":"m2bj2k",
-			"status":"tnfuab"
+			"sceneId":"668p31",
+			"jobId":447,
+			"jobDesc":"b0mbuc",
+			"jobType":"j0skh7",
+			"job":"lx8ezi",
+			"cond":"rphkos",
+			"parameter":"tjxv1m",
+			"info":"uwmgbt",
+			"retry":802,
+			"timeout":57,
+			"taskId":"7pj67v",
+			"status":"i6dahl"
 		}
 	]
 }
@@ -558,7 +558,7 @@ taskId|int|taskId|true
 
 **Request-example:**
 ```
-No Parameter
+smart-doc currently cannot provide examples of parameters for the RequestParam request mode.
 ```
 **Response-fields:**
 
@@ -575,8 +575,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"bh9wes",
-	"data":"wpp3am"
+	"msg":"sjwwwb",
+	"data":"jjjgor"
 }
 ```
 
