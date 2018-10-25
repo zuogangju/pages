@@ -6,3 +6,5 @@ _navbar.md.bak
   - [资源管理相关](/sourcesv1.md)
   - [临时文档](/temp.md)
   - [项目](/mizar.md)
+  - [schweb接口文档](/schweb.md)
+  - [调度接口](/sch.md)
