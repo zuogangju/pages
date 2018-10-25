@@ -2,3 +2,5 @@
   - [首页](/)
   - [schweb接口文档](/schweb.md)
   - [调度接口](/sch.md)
+  - [任务接口](/JobControllerApi.md)
+  - [用户接口](/UserInfoControllerApi.md)
