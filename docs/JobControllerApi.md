@@ -36,11 +36,11 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"zxnfbn",
+	"msg":"8dt89t",
 	"data":[
 		{
-			"id":"0suybu",
-			"title":"x7cta2"
+			"id":"tfzhwl",
+			"title":"ta5x3u"
 		}
 	]
 }
@@ -86,22 +86,22 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"wpwx9z",
+	"msg":"4xe30k",
 	"data":[
 		{
-			"tableName":"峻熙.赵",
+			"tableName":"健柏.郑",
 			"fields":{
 				"mapKey":{
 					
 				}
 			},
-			"filePath":"jc8w0w"
+			"filePath":"4y5zq6"
 		}
 	]
 }
 ```
 
-## 获取数据源 //TODO 待实现
+## 获取数据源 //TODO 待测试
 **URL:** http://{server}/m1/datasource/list
 
 **Type:** GET
@@ -131,11 +131,11 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"2dgrpv",
+	"msg":"5uq94a",
 	"data":[
 		{
-			"id":"uwh2m8",
-			"title":"rkbc96"
+			"id":"yioymc",
+			"title":"svf6pi"
 		}
 	]
 }
@@ -175,8 +175,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"1j3xa0",
-	"data":"f0cqdr"
+	"msg":"sckoxj",
+	"data":"3kv56t"
 }
 ```
 
@@ -192,10 +192,10 @@ data|object|接口响应数据
 
 Parameter | Type|Description|Required
 ---|---|---|---
-name|string|任务名称|false
+name|string|任务名称|true
 taskId|string|taskId|false
-centerId|string|注册中心id|false
-containerId|string|容器id|false
+centerId|string|注册中心id|true
+containerId|string|容器id|true
 sql|string|sql|false
 fileType|string|文件类型|false
 sqlName|string|sql名称|false
@@ -204,13 +204,13 @@ sqlName|string|sql名称|false
 **Request-example:**
 ```
 {
-	"name":"峻熙.赵",
-	"taskId":"co2h1n",
-	"centerId":"zc03tq",
-	"containerId":"w65su8",
-	"sql":"mtzwiw",
-	"fileType":"h0yw8c",
-	"sqlName":"峻熙.赵"
+	"name":"健柏.郑",
+	"taskId":"mgey4p",
+	"centerId":"4dfxpg",
+	"containerId":"esfjqi",
+	"sql":"wiqrym",
+	"fileType":"2qid1f",
+	"sqlName":"健柏.郑"
 }
 ```
 **Response-fields:**
@@ -228,8 +228,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"eq3a2i",
-	"data":550
+	"msg":"zzljb8",
+	"data":251
 }
 ```
 
@@ -245,55 +245,59 @@ data|object|接口响应数据
 
 Parameter | Type|Description|Required
 ---|---|---|---
-jobId|string|任务时间|true
-name|string|名称|false
-execType|int|执行类型 0:保存调度 1:启用调度 2:执行任务调度(立即执行)|false
-centerId|string|注册中心id|false
-containerId|string|容器id|false
-isOutFile|int|是否输出文件 (1:是 0:否)|false
-isSch|int|是否配置调度(1:是 0:否)|false
+jobId|string|任务id|false
+name|string|名称|true
+execType|int|执行类型 0:保存调度 1:启用调度 2:执行任务调度(立即执行)|true
+execFilePath|string|执行文件路径(绝对路径)|false
+centerId|string|注册中心id|true
+containerId|string|容器id|true
+isOutFile|int|是否输出文件 (1:是 0:否)|true
+isSch|int|是否配置调度(1:是 0:否)|true
 sch|object|调度信息|false
 └─schType|string|调度类型(number:次,day:日,week:周,month:月)|false
 └─schDate|string|调度日期(yyyy-MM-dd)|false
 └─schTime|string|调度时间(范围值 3-23)|false
-└─isDataSource|int|是否配置数据源(1:有;0:否,isDataSource=1需配置dataSource,反之不需要配置)|false
+└─isDataSource|int|是否配置数据源(1:有;0:否,isDataSource=1需配置dataSource,反之不需要配置)|true
 └─schCycleNum|string|周期时间(例:周2-周日执行,范围 2-7)|false
 └─dataSource|array|数据源信息|false
 sqlInfo|array|sql信息|false
 └─sql|string|sql内容|false
 └─fileType|string|文件类型(如果isOutFile=0 则fileType可以传null)|false
 └─sqlName|string|sql名称|false
+└─filePath|string|sql文件路径|false
 fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|false
 
 
 **Request-example:**
 ```
 {
-	"jobId":"izfxdh",
-	"name":"峻熙.赵",
-	"execType":493,
-	"centerId":"g2166c",
-	"containerId":"44whtz",
-	"isOutFile":40,
-	"isSch":31,
+	"jobId":"9e79i7",
+	"name":"健柏.郑",
+	"execType":167,
+	"execFilePath":"v9v0qd",
+	"centerId":"tbf5kb",
+	"containerId":"h30260",
+	"isOutFile":21,
+	"isSch":50,
 	"sch":{
-		"schType":"4otw7l",
-		"schDate":"2018-10-25",
-		"schTime":"2018-10-25 15:00:35",
-		"isDataSource":139,
-		"schCycleNum":"94ksyd",
+		"schType":"ckds2d",
+		"schDate":"2018-10-26",
+		"schTime":"2018-10-26 09:29:53",
+		"isDataSource":78,
+		"schCycleNum":"j2nq4x",
 		"dataSource":[
-			""mjxdy7""
+			""nh670p""
 		]
 	},
 	"sqlInfo":[
 		{
-			"sql":"u47qsv",
-			"fileType":"d42epx",
-			"sqlName":"峻熙.赵"
+			"sql":"z9k0ea",
+			"fileType":"ky1x08",
+			"sqlName":"健柏.郑",
+			"filePath":"xhic6i"
 		}
 	],
-	"fileName":"峻熙.赵"
+	"fileName":"健柏.郑"
 }
 ```
 **Response-fields:**
@@ -323,21 +327,21 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"i73uoc",
+	"msg":"xou82c",
 	"data":[
 		{
-			"sceneId":"xx2py5",
-			"jobId":543,
-			"jobDesc":"rwgg57",
-			"jobType":"rkqawz",
-			"job":"v5vbrm",
-			"cond":"5f5r0e",
-			"parameter":"e040xt",
-			"info":"wt4awp",
-			"retry":899,
-			"timeout":592,
-			"taskId":"yqt7p2",
-			"status":"8susw7"
+			"sceneId":"rje5e2",
+			"jobId":341,
+			"jobDesc":"joe6bb",
+			"jobType":"66307k",
+			"job":"hlmume",
+			"cond":"zmoinn",
+			"parameter":"a0qzwj",
+			"info":"e6jknu",
+			"retry":40,
+			"timeout":193,
+			"taskId":"00ston",
+			"status":"m4ikig"
 		}
 	]
 }
@@ -355,8 +359,8 @@ data|object|接口响应数据
 
 Parameter | Type|Description|Required
 ---|---|---|---
-centerId|string|注册中心id|false
-containerId|string|容器id|false
+centerId|string|注册中心id|true
+containerId|string|容器id|true
 startDate|string|任务开始时间(yyyy-MM-dd)|false
 endDate|string|任务结束时间(yyyy-MM-dd)|false
 status|string|状态|false
@@ -397,21 +401,21 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"zykax9",
+	"msg":"ryybxj",
 	"data":{
-		"pageNo":299,
-		"pageSize":810,
-		"total":764,
+		"pageNo":976,
+		"pageSize":927,
+		"total":340,
 		"data":[
 			{
-				"jobId":"k8xjgd",
-				"jobName":"峻熙.赵",
-				"jobStatus":"qtd5f7",
-				"schCycleNum":"3fjwka",
-				"condition":"m3xnzr",
-				"jobStartDateTime":"2018-10-25",
-				"jobEndDateTime":"2018-10-25",
-				"schType":"gpxysk"
+				"jobId":"5cyjov",
+				"jobName":"健柏.郑",
+				"jobStatus":"ov8ftc",
+				"schCycleNum":"v1ywkf",
+				"condition":"3qfasn",
+				"jobStartDateTime":"2018-10-26",
+				"jobEndDateTime":"2018-10-26",
+				"schType":"z0f0yk"
 			}
 		]
 	}
@@ -452,8 +456,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"12h11g",
-	"data":930
+	"msg":"sro7u2",
+	"data":699
 }
 ```
 
@@ -469,24 +473,26 @@ data|object|接口响应数据
 
 Parameter | Type|Description|Required
 ---|---|---|---
-jobId|string|任务时间|true
-name|string|名称|false
-execType|int|执行类型 0:保存调度 1:启用调度 2:执行任务调度(立即执行)|false
-centerId|string|注册中心id|false
-containerId|string|容器id|false
-isOutFile|int|是否输出文件 (1:是 0:否)|false
-isSch|int|是否配置调度(1:是 0:否)|false
+jobId|string|任务id|false
+name|string|名称|true
+execType|int|执行类型 0:保存调度 1:启用调度 2:执行任务调度(立即执行)|true
+execFilePath|string|执行文件路径(绝对路径)|false
+centerId|string|注册中心id|true
+containerId|string|容器id|true
+isOutFile|int|是否输出文件 (1:是 0:否)|true
+isSch|int|是否配置调度(1:是 0:否)|true
 sch|object|调度信息|false
 └─schType|string|调度类型(number:次,day:日,week:周,month:月)|false
 └─schDate|string|调度日期(yyyy-MM-dd)|false
 └─schTime|string|调度时间(范围值 3-23)|false
-└─isDataSource|int|是否配置数据源(1:有;0:否,isDataSource=1需配置dataSource,反之不需要配置)|false
+└─isDataSource|int|是否配置数据源(1:有;0:否,isDataSource=1需配置dataSource,反之不需要配置)|true
 └─schCycleNum|string|周期时间(例:周2-周日执行,范围 2-7)|false
 └─dataSource|array|数据源信息|false
 sqlInfo|array|sql信息|false
 └─sql|string|sql内容|false
 └─fileType|string|文件类型(如果isOutFile=0 则fileType可以传null)|false
 └─sqlName|string|sql名称|false
+└─filePath|string|sql文件路径|false
 fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|false
 
 
@@ -521,21 +527,21 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"8b5fk9",
+	"msg":"wsl1op",
 	"data":[
 		{
-			"sceneId":"668p31",
-			"jobId":447,
-			"jobDesc":"b0mbuc",
-			"jobType":"j0skh7",
-			"job":"lx8ezi",
-			"cond":"rphkos",
-			"parameter":"tjxv1m",
-			"info":"uwmgbt",
-			"retry":802,
-			"timeout":57,
-			"taskId":"7pj67v",
-			"status":"i6dahl"
+			"sceneId":"ejxkbt",
+			"jobId":94,
+			"jobDesc":"5g0u9z",
+			"jobType":"goprwj",
+			"job":"a4wzve",
+			"cond":"z1song",
+			"parameter":"cf08js",
+			"info":"29jq7n",
+			"retry":575,
+			"timeout":965,
+			"taskId":"1gm7os",
+			"status":"7ahmi7"
 		}
 	]
 }
@@ -575,8 +581,8 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"sjwwwb",
-	"data":"jjjgor"
+	"msg":"cngdwe",
+	"data":"pi1zbc"
 }
 ```
 
