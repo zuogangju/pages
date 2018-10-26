@@ -40,21 +40,21 @@ data|object|接口响应数据
 {
 	"succ":true,
 	"code":0,
-	"msg":"dysvvt",
+	"msg":"asrn9g",
 	"data":{
-		"instId":"inaioe",
-		"userId":"j27hby",
-		"userName":"健柏.郑",
-		"agentInstId":"r1w14c",
-		"empnum":"j41wu6",
-		"emailbox":"wf33kk",
-		"ctttel":"17herh",
-		"status":"ripeil",
-		"description":"jl45pc",
+		"instId":"6vcpyk",
+		"userId":"66vnxr",
+		"userName":"振家.冯",
+		"agentInstId":"nxsoe9",
+		"empnum":"581k2r",
+		"emailbox":"6xxgub",
+		"ctttel":"cbt07z",
+		"status":"6fpsf6",
+		"description":"l7030j",
 		"registCenter":[
 			{
-				"id":254,
-				"title":"5ztjzh"
+				"id":375,
+				"title":"9ps7o6"
 			}
 		]
 	}
