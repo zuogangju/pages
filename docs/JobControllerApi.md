@@ -1,7 +1,7 @@
 
-# Description: M1控制层
+# Description: 任务接口
 ## 根据注册中心获取容器列表 //TODO 待实现
-**URL:** http://{server}/m1/regist/center/container
+**URL:** null/m1/regist/center/container
 
 **Type:** GET
 
@@ -17,16 +17,16 @@ registId|string|注册中心id|false
 
 **Request-example:**
 ```
-
+No Request-example
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 └─id|string|id
 └─title|string|容器
 
@@ -35,19 +35,19 @@ data|object|接口响应数据
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"h0n3qw",
+	"code":765,
+	"msg":"ak11h7",
 	"data":[
 		{
-			"id":"rvp3x9",
-			"title":"crvfzq"
+			"id":"ztk7dm",
+			"title":"usbh15"
 		}
 	]
 }
 ```
 
 ## 元数据列表查询(支持模糊查询) //TODO 待测试
-**URL:** http://{server}/m1/metadata/list
+**URL:** null/m1/metadata/list
 
 **Type:** GET
 
@@ -65,16 +65,16 @@ pageSize|int| 页数|true
 
 **Request-example:**
 ```
-
+No Request-example
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 └─tableName|string|表名称
 └─fields|map|字段信息{"id":"string","name":"string","type":"string"}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.
@@ -85,24 +85,24 @@ data|object|接口响应数据
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"c04i6k",
+	"code":538,
+	"msg":"f3hcmy",
 	"data":[
 		{
-			"tableName":"振家.冯",
+			"tableName":"钰轩.洪",
 			"fields":{
 				"mapKey":{
 					
 				}
 			},
-			"filePath":"b3pp40"
+			"filePath":"5ojfyi"
 		}
 	]
 }
 ```
 
 ## 获取数据源 //TODO 待测试
-**URL:** http://{server}/m1/datasource/list
+**URL:** null/m1/datasource/list
 
 **Type:** GET
 
@@ -118,10 +118,10 @@ No request parameters are required.
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 └─id|string|数据库id
 └─title|string|数据库名称
 
@@ -130,19 +130,19 @@ data|object|接口响应数据
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"hhqtqm",
+	"code":744,
+	"msg":"42i24u",
 	"data":[
 		{
-			"id":"yr3wpf",
-			"title":"0pvuh0"
+			"id":"cfwurh",
+			"title":"vc3bq3"
 		}
 	]
 }
 ```
 
 ## 重新运行调度 //TODO 待实现
-**URL:** http://{server}/m1/job/restart
+**URL:** null/m1/job/restart
 
 **Type:** POST
 
@@ -158,30 +158,30 @@ jobId|string|任务id|true
 
 **Request-example:**
 ```
-
+No Request-example
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"56kwyl",
-	"data":"ugem3z"
+	"code":127,
+	"msg":"tq8ttb",
+	"data":"osvny3"
 }
 ```
 
 ## 停止调度 //TODO 待实现
-**URL:** http://{server}/m1/job/stop
+**URL:** null/m1/job/stop
 
 **Type:** POST
 
@@ -204,37 +204,37 @@ sqlName|string|sql名称|false
 **Request-example:**
 ```
 {
-	"name":"振家.冯",
-	"taskId":"469uyh",
-	"centerId":"8rr349",
-	"containerId":"d2uasc",
-	"sql":"888bpn",
-	"fileType":"f5tybb",
-	"sqlName":"振家.冯"
+	"name":"钰轩.洪",
+	"taskId":"g1hf6k",
+	"centerId":"lw2fya",
+	"containerId":"gnhn23",
+	"sql":"7vkg1p",
+	"fileType":"gnebyw",
+	"sqlName":"钰轩.洪"
 }
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"fazedg",
-	"data":462
+	"code":811,
+	"msg":"9dgvft",
+	"data":636
 }
 ```
 
 ## 保存(保存调度信息)/启用调度信息(周期调度)/执行调度(立即执行) //TODO 待测试
-**URL:** http://{server}/m1/job/save
+**URL:** null/m1/job/save
 
 **Type:** POST
 
@@ -271,43 +271,43 @@ fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|f
 **Request-example:**
 ```
 {
-	"jobId":"886k1m",
-	"name":"振家.冯",
-	"execType":978,
-	"execFilePath":"wictnn",
-	"centerId":"xpb523",
-	"containerId":"urr85a",
-	"isOutFile":330,
-	"isSch":353,
+	"jobId":"px8ffh",
+	"name":"钰轩.洪",
+	"execType":937,
+	"execFilePath":"xjx6el",
+	"centerId":"6g7d8m",
+	"containerId":"sngnto",
+	"isOutFile":66,
+	"isSch":771,
 	"sch":{
-		"schType":"a5pg53",
+		"schType":"ohqv9l",
 		"schDate":"2018-10-26",
-		"schTime":"2018-10-26 10:11:52",
-		"isDataSource":101,
-		"schCycleNum":"g30pqa",
+		"schTime":"2018-10-26 10:33:07",
+		"isDataSource":367,
+		"schCycleNum":"qb1hfe",
 		"dataSource":[
-			""6ew8n5""
+			""nan6d3""
 		]
 	},
 	"sqlInfo":[
 		{
-			"sql":"qlpbw8",
-			"fileType":"robkcb",
-			"sqlName":"振家.冯",
-			"filePath":"p538uv"
+			"sql":"qc7k5z",
+			"fileType":"nnv720",
+			"sqlName":"钰轩.洪",
+			"filePath":"sush1j"
 		}
 	],
-	"fileName":"振家.冯"
+	"fileName":"钰轩.洪"
 }
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 └─sceneId|string|场景标识
 └─jobId|int|任务Id
 └─jobDesc|string|任务描述
@@ -326,29 +326,29 @@ data|object|接口响应数据
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"g8jxpk",
+	"code":132,
+	"msg":"q0nssj",
 	"data":[
 		{
-			"sceneId":"7jdb6m",
-			"jobId":358,
-			"jobDesc":"mectxs",
-			"jobType":"50gfwr",
-			"job":"rgw7k6",
-			"cond":"gwrupj",
-			"parameter":"5vb5fj",
-			"info":"xcpebj",
-			"retry":925,
-			"timeout":499,
-			"taskId":"oyq71w",
-			"status":"kcmdrn"
+			"sceneId":"at5c0n",
+			"jobId":463,
+			"jobDesc":"o280fp",
+			"jobType":"uwd601",
+			"job":"dze0ip",
+			"cond":"w5mzc9",
+			"parameter":"k4sw6q",
+			"info":"a8t3zg",
+			"retry":224,
+			"timeout":751,
+			"taskId":"cohx2y",
+			"status":"9g4t6m"
 		}
 	]
 }
 ```
 
 ## 获取任务列表 //TODO 待测试
-**URL:** http://{server}/m1/job/list
+**URL:** null/m1/job/list
 
 **Type:** GET
 
@@ -366,26 +366,26 @@ endDate|string|任务结束时间(yyyy-MM-dd)|false
 status|string|状态|false
 cycle|string|周期(number/day/week/month)|false
 name|string|名称(模糊搜索)|false
-pageNo|int|页码|false
-pageSize|int|页数|false
+pageNo|int|页码|true
+pageSize|int|页数|true
 
 
 **Request-example:**
 ```
-
+No Request-example
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 └─pageNo|int|No comments found.
 └─pageSize|int|No comments found.
 └─total|number|No comments found.
-└─data|array|接口响应数据
+└─data|array|No comments found.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobId|string|任务Id
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobName|string|任务名称
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobStatus|string|任务状态
@@ -400,22 +400,22 @@ data|object|接口响应数据
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"egd2dz",
+	"code":212,
+	"msg":"6voddo",
 	"data":{
-		"pageNo":297,
-		"pageSize":363,
-		"total":848,
+		"pageNo":483,
+		"pageSize":607,
+		"total":820,
 		"data":[
 			{
-				"jobId":"1aoze2",
-				"jobName":"振家.冯",
-				"jobStatus":"afd1y6",
-				"schCycleNum":"ywpw8z",
-				"condition":"67mz2f",
+				"jobId":"5achis",
+				"jobName":"钰轩.洪",
+				"jobStatus":"d77353",
+				"schCycleNum":"blbpcj",
+				"condition":"nmpw0x",
 				"jobStartDateTime":"2018-10-26",
 				"jobEndDateTime":"2018-10-26",
-				"schType":"2u924l"
+				"schType":"g4r759"
 			}
 		]
 	}
@@ -423,7 +423,7 @@ data|object|接口响应数据
 ```
 
 ## 下载结果 //TODO 待实现
-**URL:** http://{server}/m1/job/downloadResult
+**URL:** null/m1/job/downloadResult
 
 **Type:** GET
 
@@ -439,30 +439,30 @@ taskId|int|taskId|true
 
 **Request-example:**
 ```
-
+No Request-example
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"6x514i",
-	"data":270
+	"code":305,
+	"msg":"y96gkd",
+	"data":451
 }
 ```
 
 ## 配置调度 //TODO 待测试
-**URL:** http://{server}/m1/job/update/{jobId}
+**URL:** null/m1/job/update/{jobId}
 
 **Type:** POST
 
@@ -498,16 +498,16 @@ fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|f
 
 **Request-example:**
 ```
-
+No Request-example
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 └─sceneId|string|场景标识
 └─jobId|int|任务Id
 └─jobDesc|string|任务描述
@@ -526,29 +526,29 @@ data|object|接口响应数据
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"t9m8sr",
+	"code":615,
+	"msg":"2p71oj",
 	"data":[
 		{
-			"sceneId":"bcsfvp",
-			"jobId":417,
-			"jobDesc":"p5mave",
-			"jobType":"4sqnw4",
-			"job":"m2lkvr",
-			"cond":"6xkato",
-			"parameter":"9ejou4",
-			"info":"4p9y0t",
-			"retry":216,
-			"timeout":357,
-			"taskId":"s9dprp",
-			"status":"xbx2p9"
+			"sceneId":"tj9del",
+			"jobId":545,
+			"jobDesc":"ckva91",
+			"jobType":"qc6grm",
+			"job":"akifkl",
+			"cond":"86lt57",
+			"parameter":"azzx20",
+			"info":"4j6qzx",
+			"retry":368,
+			"timeout":968,
+			"taskId":"eeo5wc",
+			"status":"zzmky9"
 		}
 	]
 }
 ```
 
 ## 查看日志 //TODO 待实现
-**URL:** http://{server}/m1/job/log
+**URL:** null/m1/job/log
 
 **Type:** GET
 
@@ -564,25 +564,25 @@ taskId|int|taskId|true
 
 **Request-example:**
 ```
-
+No Request-example
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"xogdng",
-	"data":"nc02hu"
+	"code":671,
+	"msg":"tkezg7",
+	"data":"w7qx93"
 }
 ```
 

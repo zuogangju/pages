@@ -1,7 +1,7 @@
 
 # Description: 用户控制层
 ## 获取用户信息  todo 待测试
-**URL:** http://{server}/m1/userinfo
+**URL:** null/m1/userinfo
 
 **Type:** GET
 
@@ -17,10 +17,10 @@ No request parameters are required.
 
 Field | Type|Description
 ---|---|---
-succ|boolean|成功返回true,失败返回false
-code|int|响应代码
-msg|string|接口响应信息
-data|object|接口响应数据
+succ|boolean|后台返回给前台的结果
+code|int|后台返回给前端的状态码
+msg|string|调用失败的时候会给这个字段赋值
+data|object|后台给前台返回的数据
 └─instId|string|机构id
 └─userId|string|用户id
 └─userName|string|用户名称
@@ -39,22 +39,22 @@ data|object|接口响应数据
 ```
 {
 	"succ":true,
-	"code":0,
-	"msg":"asrn9g",
+	"code":144,
+	"msg":"bdblbb",
 	"data":{
-		"instId":"6vcpyk",
-		"userId":"66vnxr",
-		"userName":"振家.冯",
-		"agentInstId":"nxsoe9",
-		"empnum":"581k2r",
-		"emailbox":"6xxgub",
-		"ctttel":"cbt07z",
-		"status":"6fpsf6",
-		"description":"l7030j",
+		"instId":"z0as3q",
+		"userId":"1093o4",
+		"userName":"钰轩.洪",
+		"agentInstId":"907k8c",
+		"empnum":"jb6pj5",
+		"emailbox":"lpgmns",
+		"ctttel":"7s1zob",
+		"status":"4mwdxr",
+		"description":"cnjndl",
 		"registCenter":[
 			{
-				"id":375,
-				"title":"9ps7o6"
+				"id":62,
+				"title":"vdu988"
 			}
 		]
 	}
