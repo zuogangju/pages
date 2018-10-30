@@ -12,7 +12,7 @@
 
 Parameter | Type|Description|Required
 ---|---|---|---
-registId|string|注册中心id|false
+registId|string|注册中心id|true
 
 
 **Request-example:**
@@ -35,12 +35,12 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":765,
-	"msg":"ak11h7",
+	"code":931,
+	"msg":"hsxsi9",
 	"data":[
 		{
-			"id":"ztk7dm",
-			"title":"usbh15"
+			"id":"ke7bnq",
+			"title":"ygqf8e"
 		}
 	]
 }
@@ -58,7 +58,7 @@ data|object|后台给前台返回的数据
 
 Parameter | Type|Description|Required
 ---|---|---|---
-tableName|string|表名称(支持模糊查询)|true
+tableName|string|表名称(支持模糊查询)|false
 pageNo|int|   页码|true
 pageSize|int| 页数|true
 
@@ -85,17 +85,17 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":538,
-	"msg":"f3hcmy",
+	"code":702,
+	"msg":"1thnrh",
 	"data":[
 		{
-			"tableName":"钰轩.洪",
+			"tableName":"航.潘",
 			"fields":{
 				"mapKey":{
 					
 				}
 			},
-			"filePath":"5ojfyi"
+			"filePath":"dw6cm2"
 		}
 	]
 }
@@ -130,12 +130,12 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":744,
-	"msg":"42i24u",
+	"code":405,
+	"msg":"69dxle",
 	"data":[
 		{
-			"id":"cfwurh",
-			"title":"vc3bq3"
+			"id":"ssutg6",
+			"title":"yigfx1"
 		}
 	]
 }
@@ -174,9 +174,9 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":127,
-	"msg":"tq8ttb",
-	"data":"osvny3"
+	"code":435,
+	"msg":"wguowg",
+	"data":"nrkgg5"
 }
 ```
 
@@ -204,13 +204,13 @@ sqlName|string|sql名称|false
 **Request-example:**
 ```
 {
-	"name":"钰轩.洪",
-	"taskId":"g1hf6k",
-	"centerId":"lw2fya",
-	"containerId":"gnhn23",
-	"sql":"7vkg1p",
-	"fileType":"gnebyw",
-	"sqlName":"钰轩.洪"
+	"name":"航.潘",
+	"taskId":"dpj15a",
+	"centerId":"1tyic2",
+	"containerId":"7oh852",
+	"sql":"ndpzdz",
+	"fileType":"5zg14e",
+	"sqlName":"航.潘"
 }
 ```
 **Response-fields:**
@@ -227,9 +227,9 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":811,
-	"msg":"9dgvft",
-	"data":636
+	"code":993,
+	"msg":"rc4e67",
+	"data":454
 }
 ```
 
@@ -271,33 +271,33 @@ fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|f
 **Request-example:**
 ```
 {
-	"jobId":"px8ffh",
-	"name":"钰轩.洪",
-	"execType":937,
-	"execFilePath":"xjx6el",
-	"centerId":"6g7d8m",
-	"containerId":"sngnto",
-	"isOutFile":66,
-	"isSch":771,
+	"jobId":"07ic19",
+	"name":"航.潘",
+	"execType":109,
+	"execFilePath":"lnq5l3",
+	"centerId":"3mt0o5",
+	"containerId":"ahfl4h",
+	"isOutFile":407,
+	"isSch":621,
 	"sch":{
-		"schType":"ohqv9l",
-		"schDate":"2018-10-26",
-		"schTime":"2018-10-26 10:33:07",
-		"isDataSource":367,
-		"schCycleNum":"qb1hfe",
+		"schType":"19v44h",
+		"schDate":"2018-10-30",
+		"schTime":"2018-10-30 16:22:53",
+		"isDataSource":588,
+		"schCycleNum":"nx72bl",
 		"dataSource":[
-			""nan6d3""
+			""lyz8t4""
 		]
 	},
 	"sqlInfo":[
 		{
-			"sql":"qc7k5z",
-			"fileType":"nnv720",
-			"sqlName":"钰轩.洪",
-			"filePath":"sush1j"
+			"sql":"ozc10t",
+			"fileType":"xncidf",
+			"sqlName":"航.潘",
+			"filePath":"iewg4x"
 		}
 	],
-	"fileName":"钰轩.洪"
+	"fileName":"航.潘"
 }
 ```
 **Response-fields:**
@@ -326,22 +326,22 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":132,
-	"msg":"q0nssj",
+	"code":787,
+	"msg":"htvyce",
 	"data":[
 		{
-			"sceneId":"at5c0n",
-			"jobId":463,
-			"jobDesc":"o280fp",
-			"jobType":"uwd601",
-			"job":"dze0ip",
-			"cond":"w5mzc9",
-			"parameter":"k4sw6q",
-			"info":"a8t3zg",
-			"retry":224,
-			"timeout":751,
-			"taskId":"cohx2y",
-			"status":"9g4t6m"
+			"sceneId":"3b3gly",
+			"jobId":617,
+			"jobDesc":"mhl4qo",
+			"jobType":"pnhtyd",
+			"job":"51nlqo",
+			"cond":"86k4fj",
+			"parameter":"xwtyrq",
+			"info":"qslyni",
+			"retry":317,
+			"timeout":169,
+			"taskId":"87c91e",
+			"status":"ctv7f8"
 		}
 	]
 }
@@ -382,10 +382,10 @@ succ|boolean|后台返回给前台的结果
 code|int|后台返回给前端的状态码
 msg|string|调用失败的时候会给这个字段赋值
 data|object|后台给前台返回的数据
-└─pageNo|int|No comments found.
-└─pageSize|int|No comments found.
-└─total|number|No comments found.
-└─data|array|No comments found.
+└─pageNo|int|当前页
+└─pageSize|int|每页的数量
+└─total|number|总记录数
+└─data|array|结果集
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobId|string|任务Id
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobName|string|任务名称
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobStatus|string|任务状态
@@ -400,22 +400,22 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":212,
-	"msg":"6voddo",
+	"code":540,
+	"msg":"v52xr8",
 	"data":{
-		"pageNo":483,
-		"pageSize":607,
-		"total":820,
+		"pageNo":210,
+		"pageSize":397,
+		"total":321,
 		"data":[
 			{
-				"jobId":"5achis",
-				"jobName":"钰轩.洪",
-				"jobStatus":"d77353",
-				"schCycleNum":"blbpcj",
-				"condition":"nmpw0x",
-				"jobStartDateTime":"2018-10-26",
-				"jobEndDateTime":"2018-10-26",
-				"schType":"g4r759"
+				"jobId":"r6v31e",
+				"jobName":"航.潘",
+				"jobStatus":"mz4u2p",
+				"schCycleNum":"8d7kvl",
+				"condition":"whe6vp",
+				"jobStartDateTime":"2018-10-30",
+				"jobEndDateTime":"2018-10-30",
+				"schType":"67hhmh"
 			}
 		]
 	}
@@ -455,9 +455,9 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":305,
-	"msg":"y96gkd",
-	"data":451
+	"code":862,
+	"msg":"xeknh9",
+	"data":336
 }
 ```
 
@@ -526,22 +526,22 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":615,
-	"msg":"2p71oj",
+	"code":148,
+	"msg":"fvp0fp",
 	"data":[
 		{
-			"sceneId":"tj9del",
-			"jobId":545,
-			"jobDesc":"ckva91",
-			"jobType":"qc6grm",
-			"job":"akifkl",
-			"cond":"86lt57",
-			"parameter":"azzx20",
-			"info":"4j6qzx",
-			"retry":368,
-			"timeout":968,
-			"taskId":"eeo5wc",
-			"status":"zzmky9"
+			"sceneId":"9q577t",
+			"jobId":837,
+			"jobDesc":"glrf1h",
+			"jobType":"6kse26",
+			"job":"3umhee",
+			"cond":"n96k18",
+			"parameter":"tz7lfu",
+			"info":"mixaxb",
+			"retry":803,
+			"timeout":916,
+			"taskId":"wwud8k",
+			"status":"fjrzw5"
 		}
 	]
 }
@@ -580,9 +580,9 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":671,
-	"msg":"tkezg7",
-	"data":"w7qx93"
+	"code":951,
+	"msg":"vgfaoe",
+	"data":"giq6lo"
 }
 ```
 

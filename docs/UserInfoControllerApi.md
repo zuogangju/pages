@@ -39,22 +39,22 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":144,
-	"msg":"bdblbb",
+	"code":531,
+	"msg":"d0vvq1",
 	"data":{
-		"instId":"z0as3q",
-		"userId":"1093o4",
-		"userName":"钰轩.洪",
-		"agentInstId":"907k8c",
-		"empnum":"jb6pj5",
-		"emailbox":"lpgmns",
-		"ctttel":"7s1zob",
-		"status":"4mwdxr",
-		"description":"cnjndl",
+		"instId":"ku3u14",
+		"userId":"gy6vys",
+		"userName":"航.潘",
+		"agentInstId":"j3peio",
+		"empnum":"06vam2",
+		"emailbox":"mkr0g8",
+		"ctttel":"o96s0u",
+		"status":"ee018q",
+		"description":"deja5m",
 		"registCenter":[
 			{
-				"id":62,
-				"title":"vdu988"
+				"id":79,
+				"title":"fw5iub"
 			}
 		]
 	}
