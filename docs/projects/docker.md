@@ -66,3 +66,35 @@ docker run -d --restart=always --name nextcloud -p 80:80 -v /my/nextcloud:/data 
 ```bash
 docker run -e ES_JAVA_OPTS="-Xms256m -Xmx256m" -d --name elasticsearch  -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch
 ```
+
+
+## maven 复制resource
+```xml
+<plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <executions>
+                            <execution>
+                                <id>copy-resources</id>
+                                <!-- 在default生命周期的 validate阶段就执行resources插件的copy-resources目标 -->
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>copy-resources</goal>
+                                </goals>
+                                <configuration>
+                                    <!-- 指定resources插件处理资源文件到哪个目录下 -->
+                                    <outputDirectory>${basedir}/src/test/resources</outputDirectory>
+                                    <!-- 待处理的资源定义 -->
+                                    <resources>
+                                        <resource>
+                                            <!-- 指定resources插件处理哪个目录下的资源文件 -->
+                                            <directory>${basedir}/resource/deploy/prod</directory>
+                                            <filtering>true</filtering>
+                                        </resource>
+                                    </resources>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+```
