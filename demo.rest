@@ -1,0 +1,2 @@
+# 查询用户信息
+GET http://172.20.183.205/upbdbi/userinfo HTTP/1.1
