@@ -1,7 +1,7 @@
 
 # Description: 任务接口
 ## 刷新元数据
-**URL:** null/m1/metadata/clear
+**URL:** http://{server}/m1/metadata/clear
 
 **Type:** GET
 
@@ -17,18 +17,18 @@ No request parameters are required.
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":937,
-	"msg":"9einbi",
+	"code":0,
+	"msg":"ma6j9z",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -36,7 +36,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 元数据列表查询(支持模糊查询) //TODO 待测试
-**URL:** null/m1/metadata/list
+**URL:** http://{server}/m1/metadata/list
 
 **Type:** GET
 
@@ -60,10 +60,10 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 └─dbName|string|No comments found.
 └─tableName|string|表名称
 └─tableDesc|string|表描述
@@ -76,26 +76,26 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":582,
-	"msg":"02e064",
+	"code":0,
+	"msg":"6vgv7l",
 	"data":[
 		{
-			"dbName":"博文.吕",
-			"tableName":"博文.吕",
-			"tableDesc":"zsohlm",
+			"dbName":"子轩.陆",
+			"tableName":"子轩.陆",
+			"tableDesc":"2jmkrh",
 			"fields":{
 				"mapKey":{
 					
 				}
 			},
-			"filePath":"lu54z4"
+			"filePath":"vpvrpw"
 		}
 	]
 }
 ```
 
 ## 获取数据源 //TODO 待测试
-**URL:** null/m1/datasource/list
+**URL:** http://{server}/m1/datasource/list
 
 **Type:** GET
 
@@ -111,10 +111,10 @@ No request parameters are required.
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 └─id|string|数据库id
 └─title|string|数据库名称
 
@@ -123,19 +123,19 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":969,
-	"msg":"nht5vn",
+	"code":0,
+	"msg":"0stdqg",
 	"data":[
 		{
-			"id":"1dicn7",
-			"title":"yx7ql1"
+			"id":"j1bbnc",
+			"title":"uaszsm"
 		}
 	]
 }
 ```
 
 ## 重新运行调度 //TODO 待实现
-**URL:** null/m1/job/restart
+**URL:** http://{server}/m1/job/restart
 
 **Type:** POST
 
@@ -157,24 +157,24 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":683,
-	"msg":"gob8ms",
-	"data":"ox7dum"
+	"code":0,
+	"msg":"fid6j8",
+	"data":"1vwsx5"
 }
 ```
 
 ## 停止调度 //TODO 待实现
-**URL:** null/m1/job/stop
+**URL:** http://{server}/m1/job/stop
 
 **Type:** POST
 
@@ -197,37 +197,37 @@ sqlName|string|sql名称|false
 **Request-example:**
 ```
 {
-	"name":"博文.吕",
-	"taskId":"9o4fap",
-	"centerId":"t4pev5",
-	"containerId":"9w3vzc",
-	"sql":"7tr9df",
-	"fileType":"i4wbzk",
-	"sqlName":"博文.吕"
+	"name":"子轩.陆",
+	"taskId":"2whhgt",
+	"centerId":"0uax18",
+	"containerId":"p98nyr",
+	"sql":"3m6xfg",
+	"fileType":"194dxk",
+	"sqlName":"子轩.陆"
 }
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":427,
-	"msg":"iwibpk",
-	"data":440
+	"code":0,
+	"msg":"gt2mzy",
+	"data":22
 }
 ```
 
 ## 保存(保存调度信息)/启用调度信息(周期调度)/执行调度(立即执行) //TODO 待测试
-**URL:** null/m1/job/save
+**URL:** http://{server}/m1/job/save
 
 **Type:** POST
 
@@ -265,44 +265,44 @@ fileName|string|输出文件名称(如果isOutFile=0 则fileName可以传null)|f
 **Request-example:**
 ```
 {
-	"jobId":"0ha0w8",
-	"jobNm":"l517z1",
-	"jobDesc":"4r9qmk",
-	"execType":491,
-	"execFilePath":"w3kjl5",
-	"centerId":"na3fwi",
-	"containerId":"d5e7v3",
-	"isOutFile":395,
-	"isSch":496,
+	"jobId":"jp810w",
+	"jobNm":"2yt295",
+	"jobDesc":"808pop",
+	"execType":805,
+	"execFilePath":"pnqtii",
+	"centerId":"edoy1q",
+	"containerId":"l0pmzy",
+	"isOutFile":728,
+	"isSch":727,
 	"sch":{
-		"schType":"3oksgo",
-		"schDate":"2018-12-26",
-		"schTime":"2018-12-26 16:01:08",
-		"isDataSource":273,
-		"schCycleNum":"d4zte7",
+		"schType":"c6p7o8",
+		"schDate":"2018-12-27",
+		"schTime":"2018-12-27 12:13:12",
+		"isDataSource":894,
+		"schCycleNum":"32405u",
 		"dataSource":[
-			""39ewmn""
+			""qv73qe""
 		]
 	},
 	"sqlInfo":[
 		{
-			"sql":"n94btz",
-			"fileType":"b5prcr",
-			"sqlName":"博文.吕",
-			"filePath":"k3jkbq"
+			"sql":"gpsbtn",
+			"fileType":"w1sk0t",
+			"sqlName":"子轩.陆",
+			"filePath":"002br7"
 		}
 	],
-	"fileName":"博文.吕"
+	"fileName":"子轩.陆"
 }
 ```
 **Response-fields:**
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 └─sceneId|string|场景标识
 └─jobId|int|任务Id
 └─jobDesc|string|任务描述
@@ -321,29 +321,29 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":745,
-	"msg":"erf0gq",
+	"code":0,
+	"msg":"h60h1p",
 	"data":[
 		{
-			"sceneId":"5aigkn",
-			"jobId":487,
-			"jobDesc":"l36qkk",
-			"jobType":"vvh47z",
-			"job":"f480w5",
-			"cond":"lzrjc3",
-			"parameter":"haq526",
-			"info":"1c261a",
-			"retry":373,
-			"timeout":229,
-			"taskId":"g04es0",
-			"status":"wgbo77"
+			"sceneId":"wt35wo",
+			"jobId":601,
+			"jobDesc":"79k5jw",
+			"jobType":"6zrilp",
+			"job":"xvfqew",
+			"cond":"jbcn0m",
+			"parameter":"6id16j",
+			"info":"cb4m2s",
+			"retry":153,
+			"timeout":405,
+			"taskId":"6otgm5",
+			"status":"83f2k1"
 		}
 	]
 }
 ```
 
-## 获取任务列表 //TODO 待测试
-**URL:** null/m1/job/list
+## 获取任务列表111 //TODO 待测试
+**URL:** http://{server}/m1/job/list
 
 **Type:** GET
 
@@ -354,14 +354,13 @@ data|object|后台给前台返回的数据
 
 Parameter | Type|Description|Required
 ---|---|---|---
-startDate|string|任务开始时间(yyyy-MM-dd)|false
-endDate|string|任务结束时间(yyyy-MM-dd)|false
+pageNo|int|开始位置|true
+pageSize|int|页数|true
+search|string|模糊搜索内容|false
+startDate|string|开始时间(yyyy-MM-dd)|false
+endDate|string|结束时间(yyyy-MM-dd)|false
 jobStatus|string|状态|false
 cycle|string|周期(次:number/天:day/周:week/月:month)|false
-search|string|名称(模糊搜索)|false
-pageNo|int|页码|true
-pageSize|int|页数|true
-userId|string|用户id|false
 centerId|string|注册中心id TODO MM|false
 containerId|string|容器id  TODO MM|false
 
@@ -374,14 +373,14 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 └─pageNo|int|当前页
 └─pageSize|int|每页的数量
 └─total|number|总记录数
-└─data|array|结果集
+└─data|array|接口响应数据
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobId|string|任务Id
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobNm|string|任务名称
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─jobDesc|string|任务描述
@@ -400,26 +399,26 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":953,
-	"msg":"mqv0fb",
+	"code":0,
+	"msg":"rcf22l",
 	"data":{
-		"pageNo":377,
-		"pageSize":127,
-		"total":355,
+		"pageNo":239,
+		"pageSize":455,
+		"total":400,
 		"data":[
 			{
-				"jobId":"btjq30",
-				"jobNm":"iq21b9",
-				"jobDesc":"h6zuu4",
-				"jobStatus":"porjjo",
-				"jobExecPath":"vs30b6",
-				"pjId":"pjrma5",
-				"jobParameter":"06bumy",
-				"jobInfo":"08nnwi",
-				"userId":"hntweh",
-				"instId":"e4m92i",
-				"jobStartDateTime":"2018-12-26",
-				"jobEndDateTime":"2018-12-26"
+				"jobId":"oidpwa",
+				"jobNm":"uid0h7",
+				"jobDesc":"kuahss",
+				"jobStatus":"gxl7cg",
+				"jobExecPath":"iisqs1",
+				"pjId":"rhlzhd",
+				"jobParameter":"r2lgkp",
+				"jobInfo":"r446c0",
+				"userId":"nltd5u",
+				"instId":"8hozjq",
+				"jobStartDateTime":"2018-12-27",
+				"jobEndDateTime":"2018-12-27"
 			}
 		]
 	}
@@ -427,7 +426,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 下载结果 //TODO 待实现
-**URL:** null/m1/job/downloadResult
+**URL:** http://{server}/m1/job/downloadResult
 
 **Type:** GET
 
@@ -449,24 +448,24 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":117,
-	"msg":"9d1e5h",
-	"data":889
+	"code":0,
+	"msg":"kivdn3",
+	"data":506
 }
 ```
 
 ## 配置调度 //TODO 待测试
-**URL:** null/m1/job/update/{jobId}
+**URL:** http://{server}/m1/job/update/{jobId}
 
 **Type:** POST
 
@@ -509,10 +508,10 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 └─sceneId|string|场景标识
 └─jobId|int|任务Id
 └─jobDesc|string|任务描述
@@ -531,29 +530,29 @@ data|object|后台给前台返回的数据
 ```
 {
 	"succ":true,
-	"code":355,
-	"msg":"ppvlhm",
+	"code":0,
+	"msg":"mc56xa",
 	"data":[
 		{
-			"sceneId":"6hkrvq",
-			"jobId":8,
-			"jobDesc":"komhtf",
-			"jobType":"scw19v",
-			"job":"se96d2",
-			"cond":"9o1xy3",
-			"parameter":"dawjle",
-			"info":"0t6zc0",
-			"retry":916,
-			"timeout":914,
-			"taskId":"oqa968",
-			"status":"sjnwhj"
+			"sceneId":"rkvppv",
+			"jobId":905,
+			"jobDesc":"lpnu05",
+			"jobType":"5e6ffg",
+			"job":"1h8byy",
+			"cond":"iiqans",
+			"parameter":"mq16i8",
+			"info":"hpqi9i",
+			"retry":857,
+			"timeout":211,
+			"taskId":"7kh5hi",
+			"status":"ikwmuq"
 		}
 	]
 }
 ```
 
 ## 查看日志 //TODO 待实现
-**URL:** null/m1/job/log
+**URL:** http://{server}/m1/job/log
 
 **Type:** GET
 
@@ -575,24 +574,24 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":207,
-	"msg":"7te28u",
-	"data":"e40ga3"
+	"code":0,
+	"msg":"yybgn1",
+	"data":"k5hq9p"
 }
 ```
 
-## 创建任务并启动
-**URL:** null/createJobs
+## 创建JOB
+**URL:** http://{server}/createJobs
 
 **Type:** POST
 
@@ -604,7 +603,8 @@ data|object|后台给前台返回的数据
 Parameter | Type|Description|Required
 ---|---|---|---
 businessDate|string|No comments found.|true
-type|int|No comments found.|true
+arrangedJobs|array|No comments found.|true
+plainJobs|array|No comments found.|true
 
 
 **Request-example:**
@@ -615,18 +615,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":202,
-	"msg":"e7zgqr",
+	"code":0,
+	"msg":"f22okc",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -634,7 +634,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 启动任务
-**URL:** null/reRunSchedule
+**URL:** http://{server}/reRunSchedule
 
 **Type:** GET
 
@@ -658,18 +658,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":684,
-	"msg":"uftx0g",
+	"code":0,
+	"msg":"astmwz",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -677,7 +677,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 停止任务
-**URL:** null/resetSchedule
+**URL:** http://{server}/resetSchedule
 
 **Type:** GET
 
@@ -703,18 +703,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":585,
-	"msg":"onyi52",
+	"code":0,
+	"msg":"12cp2z",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -722,7 +722,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 查询日志
-**URL:** null/resetSchedule
+**URL:** http://{server}/resetSchedule
 
 **Type:** GET
 
@@ -747,18 +747,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":428,
-	"msg":"p7z9pc",
+	"code":0,
+	"msg":"ck0ih6",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}

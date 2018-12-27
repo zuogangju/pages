@@ -1,7 +1,7 @@
 
 # Description: 用户空间——文件操作
 ## 用户空间文件删除
-**URL:** null/file/rm
+**URL:** http://{server}/file/rm
 
 **Type:** GET
 
@@ -24,18 +24,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":657,
-	"msg":"ljxd36",
+	"code":0,
+	"msg":"abg8s3",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -43,7 +43,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 用户空间文档上传
-**URL:** null/file/upload
+**URL:** http://{server}/file/upload
 
 **Type:** POST
 
@@ -67,18 +67,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":212,
-	"msg":"jni3us",
+	"code":0,
+	"msg":"rop2kh",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -86,7 +86,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 查询用户空间列表
-**URL:** null/file/docList
+**URL:** http://{server}/file/docList
 
 **Type:** GET
 
@@ -109,18 +109,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":174,
-	"msg":"bllqkp",
+	"code":0,
+	"msg":"s3ghbl",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -128,7 +128,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 查看用户空间文件内容
-**URL:** null/file/read
+**URL:** http://{server}/file/read
 
 **Type:** GET
 
@@ -153,18 +153,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":304,
-	"msg":"y75qvt",
+	"code":0,
+	"msg":"tc599q",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -172,7 +172,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 用户空间文档保存
-**URL:** null/file/save
+**URL:** http://{server}/file/save
 
 **Type:** POST
 
@@ -199,18 +199,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":500,
-	"msg":"jpyco3",
+	"code":0,
+	"msg":"jsngkt",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -218,7 +218,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 修改用户空间文件名称
-**URL:** null/file/rename
+**URL:** http://{server}/file/rename
 
 **Type:** GET
 
@@ -242,18 +242,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":12,
-	"msg":"3s43gs",
+	"code":0,
+	"msg":"fpvkt8",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -261,7 +261,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 用户空间文件创建
-**URL:** null/file/create
+**URL:** http://{server}/file/create
 
 **Type:** GET
 
@@ -285,18 +285,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":157,
-	"msg":"albd31",
+	"code":0,
+	"msg":"nqa0jl",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -304,7 +304,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 用户空间文件删除
-**URL:** null/file/delete
+**URL:** http://{server}/file/delete
 
 **Type:** GET
 
@@ -327,18 +327,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":604,
-	"msg":"q0g9fj",
+	"code":0,
+	"msg":"eq4xak",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -346,7 +346,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 获取文件集合
-**URL:** null/file/getFilesNameList
+**URL:** http://{server}/file/getFilesNameList
 
 **Type:** GET
 
@@ -370,18 +370,18 @@ No Request-example
 
 Field | Type|Description
 ---|---|---
-succ|boolean|后台返回给前台的结果
-code|int|后台返回给前端的状态码
-msg|string|调用失败的时候会给这个字段赋值
-data|object|后台给前台返回的数据
+succ|boolean|成功返回true,失败返回false
+code|int|响应代码
+msg|string|接口响应信息
+data|object|接口响应数据
 
 
 **Response-example:**
 ```
 {
 	"succ":true,
-	"code":838,
-	"msg":"1vjok3",
+	"code":0,
+	"msg":"kdxvgf",
 	"data":{
 		"waring":"You may have used non-display generics."
 	}
@@ -389,7 +389,7 @@ data|object|后台给前台返回的数据
 ```
 
 ## 下载文件
-**URL:** null/file/download
+**URL:** http://{server}/file/download
 
 **Type:** GET
 
@@ -417,6 +417,6 @@ no param name|string|The interface directly returns the string type value.
 
 **Response-example:**
 ```
-"keswbn"
+"rsbevh"
 ```
 
